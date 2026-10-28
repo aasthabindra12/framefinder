@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FrameFinder — explore visual inspiration by topic.">
+  <title>FrameFinder | Find Your Inspiration</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo">frame<span>finder.</span></a>
+    <p class="header-note">A little inspiration goes a long way.</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT IDEA STARTS HERE</p>
+
+      <h1>Find a frame.<br><span>Find a feeling.</span></h1>
+
+      <p class="description">
+        Explore the world through images. Search a topic and discover
+        something worth looking at.
+      </p>
+
+      <form id="search-form" class="search-form">
+        <label for="search-input" class="visually-hidden">
+          Search for images
+        </label>
+
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Try mountains, architecture, coffee..."
+        >
+
+        <button id="search-button" type="button">
+          Search <span aria-hidden="true">↗</span>
+        </button>
+
+        <button id="clear-button" type="reset">
+          Clear
+        </button>
+      </form>
+
+      <div class="suggestions">
+        <span class="suggestion-label">TRY EXPLORING</span>
+        <button type="button" class="chip">Nature</button>
+        <button type="button" class="chip">Architecture</button>
+        <button type="button" class="chip">Travel</button>
+        <button type="button" class="chip">Minimalism</button>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-label="Image search results">
+      <div class="gallery-heading">
+        <div>
+          <h2>Your visual gallery</h2>
+          <p id="result-count">Your discoveries will appear here.</p>
+        </div>
+        <span class="gallery-number">01 / EXPLORE</span>
+      </div>
+
+      <p id="empty-state">
+        <span class="empty-icon" aria-hidden="true">✳</span>
+        <strong>Your gallery is waiting.</strong>
+        <span>Enter a topic above to start your visual journey.</span>
+      </p>
+
+      <section id="results" aria-label="Image results"></section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for the endlessly curious.</p>
+    <p>FRAMEFINDER © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
